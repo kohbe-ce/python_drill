@@ -1,0 +1,13 @@
+1
+1
+1
+1
+1
+
+
+# 파일 객체 생성
+file = 'test.txt'
+fd = open(file, 'rt')
+
+
+print(fd.readline())
