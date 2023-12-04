@@ -1,4 +1,4 @@
-
+"""
 iceame_cnt = 10
 jandon = 5000
 iceame = 300
@@ -27,3 +27,16 @@ while iceame_cnt:
 
     if not iceame_cnt:
         print("We haven't any coffee.")
+        break
+"""
+import Coffee
+
+def main():
+    cm = Coffee.CoffeeMachine()
+    while cm.info():
+        if cm.requtest() == 1:
+            cm.check_amount()
+            continue
+if __name__ == "__main__":
+    main()
+
